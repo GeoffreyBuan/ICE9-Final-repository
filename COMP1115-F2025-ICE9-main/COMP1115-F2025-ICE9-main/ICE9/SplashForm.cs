@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static ICE9.Program;
 
 namespace ICE9
 {
@@ -15,6 +16,13 @@ namespace ICE9
         public SplashForm()
         {
             InitializeComponent();
+        }
+
+        private void Splash_Timer_Tick(object sender, EventArgs e)
+        {
+            this.Splash_Timer.Stop();
+            this.Hide();
+            Program.Forms[(int)FormType.Selection].Show();
         }
     }
 }

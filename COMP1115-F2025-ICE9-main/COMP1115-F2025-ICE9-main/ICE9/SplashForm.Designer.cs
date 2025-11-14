@@ -47,6 +47,7 @@
             // 
             Splash_Timer.Enabled = true;
             Splash_Timer.Interval = 2000;
+            Splash_Timer.Tick += Splash_Timer_Tick;
             // 
             // SplashForm
             // 

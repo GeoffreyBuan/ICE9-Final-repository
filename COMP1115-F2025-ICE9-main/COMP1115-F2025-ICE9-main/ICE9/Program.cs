@@ -10,6 +10,7 @@ namespace ICE9
             Start,
             Next,
             Final,
+            Selection,
             About
         }
         public static List<Form> Forms;
@@ -36,6 +37,7 @@ namespace ICE9
             NextForm,
              AboutForm
              ] ;
+
             Application.Run(SplashForm);
             Application.Run(new SelectionForm());
                    
