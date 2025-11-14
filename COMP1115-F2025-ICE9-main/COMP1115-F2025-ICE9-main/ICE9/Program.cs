@@ -13,7 +13,6 @@ namespace ICE9
             About
         }
         public static List<Form> Forms;
-
             public static SplashForm SplashForm;
             public static SelectionForm SelectionForm;
             public static NextForm NextForm;
@@ -37,8 +36,9 @@ namespace ICE9
             NextForm,
              AboutForm
              ] ;
-            
-                Application.Run(new SelectionForm());
-            }
+            Application.Run(SplashForm);
+            Application.Run(new SelectionForm());
+                   
+        }
         }
     }
