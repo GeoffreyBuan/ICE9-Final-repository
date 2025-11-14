@@ -22,6 +22,7 @@ namespace ICE9
             [STAThread]
             static void Main()
             {
+            ApplicationConfiguration.Initialize();
             SplashForm = new SplashForm();
             SelectionForm = new SelectionForm();
             NextForm = new NextForm();
@@ -36,7 +37,7 @@ namespace ICE9
             NextForm,
              AboutForm
              ] ;
-            ApplicationConfiguration.Initialize();
+            
                 Application.Run(new SelectionForm());
             }
         }
